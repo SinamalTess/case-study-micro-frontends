@@ -7,11 +7,13 @@ module.exports = {
     devServer: {
         port: 8081,
     },
-    plugins: [new ModuleFederationPlugin({
-        name: 'container',
-        filename: 'remoteEntry.js',
-        exposes: {
-            './containerIndex': './src/index'
-        }
-    })],
+    plugins: [
+        new ModuleFederationPlugin({
+            name: 'container',
+            filename: 'remoteEntry.js',
+            exposes: {
+                './containerIndex': './src/index',
+            },
+        }),
+    ],
 }
