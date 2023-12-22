@@ -2,7 +2,7 @@ const {webpackCommonConfig} = require("../../webpack.config.common");
 
 module.exports = {
     ...webpackCommonConfig,
-    entry: "./src/index.tsx",
+    entry: "./src/index.ts",
     devServer: {
         port: 8081
     },
