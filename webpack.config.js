@@ -1,7 +1,11 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
+const {webpackCommonConfig} = require("./webpack.config.common");
+
 module.exports = {
-    mode: 'development',
-    entry: "./packages/container/index.js",
+    ...webpackCommonConfig,
+    entry: "./packages/container/index.ts",
     devServer: {
         port: 8081
-    }
+    },
 }
