@@ -16,12 +16,14 @@ module.exports = {
         resolve: {
             extensions: ['.tsx', '.ts', '.js'],
         },
-        plugins: [new HtmlWebpackPlugin({
-            template: "public/index.html"
-        })],
+        plugins: [
+            new HtmlWebpackPlugin({
+                template: 'public/index.html',
+            }),
+        ],
         output: {
             filename: 'bundle.js',
             path: path.resolve(__dirname, 'dist'),
-        }
-        }
+        },
+    },
 }
