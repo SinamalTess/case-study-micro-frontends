@@ -7,4 +7,4 @@ export const ReactApp = () => {
     return <p>React Application</p>
 }
 
-ReactDOM.render(<ReactApp />, document.getElementById('ReactApp'))
+ReactDOM.render(<ReactApp />, document.getElementById('sectionAContainer')) // Mind the name here, it can't be the same as the exposed name of the microfontend

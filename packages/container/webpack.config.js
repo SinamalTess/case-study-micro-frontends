@@ -10,9 +10,8 @@ module.exports = {
     plugins: [
         new ModuleFederationPlugin({
             name: 'container',
-            filename: 'remoteEntry.js',
-            exposes: {
-                './containerIndex': './src/index',
+            remotes: {
+                sectionA: 'sectionA@http://localhost:8082/remoteEntry.js',
             },
         }),
     ],

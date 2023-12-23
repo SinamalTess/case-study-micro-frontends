@@ -9,10 +9,10 @@ module.exports = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'react',
+            name: 'sectionA',
             filename: 'remoteEntry.js',
             exposes: {
-                './reactIndex': './src/index',
+                './sectionAIndex': './src/index',
             },
         }),
     ],
